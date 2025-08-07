@@ -10,7 +10,7 @@ A powerful Streamlit web application for semantic search over legal documents wi
 ---
 
 ## 🚀 Overview
-
+This project implements a semantic legal document search system featuring:
 - **Ollama Embeddings**: Uses Ollama's "nomic-embed-text" model to convert legal text into semantic vectors.  
 - **ChromaDB ANN Search**: Employs ChromaDB for fast approximate nearest neighbor retrieval with optimized HNSW indexing.  
 - **Cross-Encoder Reranking**: Applies a dense cross-encoder (ms-marco-MiniLM-L-6-v2) for refining initial results.  
