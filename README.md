@@ -2,7 +2,7 @@
 
 ---
 
-# 🧠 Legal Search with Explanations
+# 🔍 Legal Search with Explanations
 
 A powerful Streamlit web application for semantic search over legal documents with AI-generated explanations. This project integrates cutting-edge embedding models, ANN search, neural reranking, and LLM-based explanation generation to help users efficiently find and understand relevant legal provisions.
 
@@ -10,12 +10,12 @@ A powerful Streamlit web application for semantic search over legal documents wi
 
 ## 🚀 Overview
 
-
 - **Ollama Embeddings**: Uses Ollama's "nomic-embed-text" model to convert legal text into semantic vectors.  
 - **ChromaDB ANN Search**: Employs ChromaDB for fast approximate nearest neighbor retrieval with optimized HNSW indexing.  
 - **Cross-Encoder Reranking**: Applies a dense cross-encoder (ms-marco-MiniLM-L-6-v2) for refining initial results.  
 - **LLaMA 2 LLM Explanation Generation**: Calls Ollama's LLM (llama2:latest) to generate concise, human-readable explanations for each search result on demand.  
 - **Streamlit UI**: Interactive, clean interface with query input, configurable top-k results, rerank scoring, and explanation display.
+
 
 
 ---
@@ -90,7 +90,7 @@ A powerful Streamlit web application for semantic search over legal documents wi
 
 Launch the Streamlit app with:
 
-    ```bash
+     ```bash
       streamlit run app.py
 
 ** Enter your legal query in the input area.
