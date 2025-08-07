@@ -91,7 +91,7 @@ This project implements a semantic legal document search system featuring:
 
 Launch the Streamlit app with:
 
-     ```bash
+     ```
       streamlit run app.py
 
 ** Enter your legal query in the input area.
