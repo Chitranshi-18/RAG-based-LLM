@@ -95,10 +95,10 @@ Launch the Streamlit app with:
    streamlit run app.py  
    ```
     
-** Enter your legal query in the input area.
-** Adjust the "Number of top results" slider.
-** Click "Run Semantic Search" to retrieve and rerank relevant legal documents.
-** Click "Show Explanation" on any result to generate a concise AI explanation of relevance.
+- Enter your legal query in the input area.
+- Adjust the "Number of top results" slider.
+- Click "Run Semantic Search" to retrieve and rerank relevant legal documents.
+- Click "Show Explanation" on any result to generate a concise AI explanation of relevance.
 
 
 ---
