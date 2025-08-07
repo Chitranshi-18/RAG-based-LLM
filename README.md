@@ -1,4 +1,4 @@
-# Rag_based_LLM
+# Rag-based-LLM
 
 ---
 
