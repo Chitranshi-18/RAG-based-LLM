@@ -84,8 +84,8 @@ This project implements a semantic legal document search system featuring:
 (http://localhost:11434/api by default) with the required models loaded.)
 
 5. ** Place your bns.csv file in the root directory. The file should contain legal document descriptions and metadata (act, section, description).
-
-
+  
+  
 ---
 
 ## 🚀 Running the App
@@ -93,7 +93,8 @@ This project implements a semantic legal document search system featuring:
 Launch the Streamlit app with:
    ```bash
    streamlit run app.py  
-
+   ```
+    
 ** Enter your legal query in the input area.
 ** Adjust the "Number of top results" slider.
 ** Click "Run Semantic Search" to retrieve and rerank relevant legal documents.
