@@ -10,7 +10,6 @@ A powerful Streamlit web application for semantic search over legal documents wi
 
 ## 🚀 Overview
 
-## 🚀 Overview
 
 - **Ollama Embeddings**: Uses Ollama's "nomic-embed-text" model to convert legal text into semantic vectors.  
 - **ChromaDB ANN Search**: Employs ChromaDB for fast approximate nearest neighbor retrieval with optimized HNSW indexing.  
@@ -108,3 +107,68 @@ Launch the Streamlit app with:
 - `bns.csv`: Legal documents dataset (user-provided).  
 - `logo.jpg`: Optional sidebar logo image.  
 - `README.md`: Documentation and usage instructions.
+
+
+---
+
+## ⚙️ Configuration
+
+Adjustable Parameters (within `app.py`)
+
+- `OLLAMA_EMBED_MODEL`: Ollama embedding model name (default: `"nomic-embed-text"`).  
+- `OLLAMA_LLM_MODEL`: Ollama LLM model for explanations (default: `"llama2:latest"`).  
+- `OLLAMA_API_URL`: Base URL for Ollama API calls.  
+- `CHROMA_COLLECTION_NAME`: ChromaDB collection name.  
+- `BATCH_SIZE`: Number of documents processed per batch during indexing.  
+- `HNSW parameters`: Settings for efficient ANN index construction and search.  
+- `Top-K slider`: User-controlled display and rerank result count.
+
+
+---
+
+## 🛡️ Error Handling & Reliability
+
+- Cached loading of embedding function and reranker models with Streamlit caching.  
+- User-friendly error messages for missing CSV files or Ollama API connectivity issues.  
+- Explanation generation with 60-second timeout and error fallback messages.  
+- Progress indicators and status text for batch embedding.
+
+
+---
+
+## 💡 Acknowledgements
+
+This project leverages:
+
+- **Ollama** for embeddings & language models  
+- **ChromaDB** for vector similarity search  
+- **Sentence Transformers** cross-encoder models for reranking  
+- **Streamlit** for creating the web app UI
+
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See LICENSE for details.
+
+
+---
+
+## 🤝 Contribution
+
+Contributions, issues, and feature requests are welcome! Feel free to open an issue or submit a pull request.
+
+
+---
+
+## 🔗 Contact
+For questions or support, please contact csrivastava182000@gmail.com.
+
+
+---
+
+Enjoy exploring and extending your legal search with AI-powered explanations! 🚀
+
+
+
