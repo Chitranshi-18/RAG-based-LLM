@@ -78,11 +78,12 @@ This project implements a semantic legal document search system featuring:
 
 2. **Install required Python packages:**
    ```bash
-      pip install streamlit pandas chromadb sentence-transformers
-3. **Ensure Ollama server is running at the configured API URL:**
+   pip install streamlit pandas chromadb sentence-transformers  
+      
+4. **Ensure Ollama server is running at the configured API URL:**
 (http://localhost:11434/api by default) with the required models loaded.)
 
-4. ** Place your bns.csv file in the root directory. The file should contain legal document descriptions and metadata (act, section, description).
+5. ** Place your bns.csv file in the root directory. The file should contain legal document descriptions and metadata (act, section, description).
 
 
 ---
@@ -90,9 +91,8 @@ This project implements a semantic legal document search system featuring:
 ## 🚀 Running the App
 
 Launch the Streamlit app with:
-
-     ```
-      streamlit run app.py
+   ```bash
+   streamlit run app.py  
 
 ** Enter your legal query in the input area.
 ** Adjust the "Number of top results" slider.
