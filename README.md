@@ -11,10 +11,10 @@ A powerful Streamlit web application for semantic search over legal documents wi
 
 ## 🚀 Overview
 This project implements a semantic legal document search system featuring:
-- **Ollama Embeddings**: Uses Ollama's "nomic-embed-text" model to convert legal text into semantic vectors.  
+- **Ollama Embeddings**: Uses Ollama's `"nomic-embed-text"` model to convert legal text into semantic vectors.  
 - **ChromaDB ANN Search**: Employs ChromaDB for fast approximate nearest neighbor retrieval with optimized HNSW indexing.  
-- **Cross-Encoder Reranking**: Applies a dense cross-encoder (ms-marco-MiniLM-L-6-v2) for refining initial results.  
-- **LLaMA 2 LLM Explanation Generation**: Calls Ollama's LLM (llama2:latest) to generate concise, human-readable explanations for each search result on demand.  
+- **Cross-Encoder Reranking**: Applies a dense cross-encoder (`ms-marco-MiniLM-L-6-v2`) for refining initial results.  
+- **LLaMA 2 LLM Explanation Generation**: Calls Ollama's LLM ( `llama2:latest`) to generate concise, human-readable explanations for each search result on demand.  
 - **Streamlit UI**: Interactive, clean interface with query input, configurable top-k results, rerank scoring, and explanation display.
 
 
@@ -22,11 +22,11 @@ This project implements a semantic legal document search system featuring:
 ---
 ## ✨ Features
 
-- **Efficient Embedding & Index Caching**: Uses Streamlit's @st.cache_resource decorator to avoid repeated embedding computation and index rebuilding across sessions.  
+- **Efficient Embedding & Index Caching**: Uses Streamlit's `@st.cache_resource` decorator to avoid repeated embedding computation and index rebuilding across sessions.  
 - **Batch Processing with Progress Bar**: Shows real-time progress during initial embedding and indexing.  
 - **Configurable Top-K Results**: Adjustable slider to control number of displayed and reranked results.  
 - **On-Demand Explanation Generation**: Explanations by LLM are generated only when users request them, ensuring responsiveness.  
-- **Streamlined UI with Styling**: Displays cosine distances, rerank scores, legal metadata (act and section), document excerpts, and AI-generated explanations in a visually appealing manner.
+- **Streamlined UI with Styling**: Displays cosine distances, rerank scores, legal metadata (`act` and `section`), document excerpts, and AI-generated explanations in a visually appealing manner.
 
 ---
 
@@ -40,7 +40,7 @@ This project implements a semantic legal document search system featuring:
 
 ## ⚙️ How It Works
 
-- **Data Loading**: Reads legal documents from bns.csv (with description, act, and section columns).  
+- **Data Loading**: Reads legal documents from `bns.csv` (with `description`, `act`, and `section` columns).  
 - **Embedding Generation**: Uses Ollama’s embedding model to convert documents into vector representations.  
 - **Indexing**: Builds an ANN index in ChromaDB optimized with HNSW parameters.  
 - **Query Processing**: Retrieves candidate documents based on vector similarity.  
@@ -55,15 +55,15 @@ This project implements a semantic legal document search system featuring:
 
 - Python 3.8 or higher  
 - Python packages:  
-  - streamlit  
-  - pandas  
-  - chromadb  
-  - sentence-transformers  
-  - requests  
-  - numpy  
+  - `streamlit`  
+  - `pandas` 
+  - `chromadb`  
+  - `sentence-transformers`  
+  - `requests`  
+  - `numpy`  
 - Ollama server running locally or accessible remotely with:  
-  - "nomic-embed-text" embedding model available  
-  - "llama2:latest" LLM model available  
+  - `"nomic-embed-text"` embedding model available  
+  - `"llama2:latest"` LLM model available  
 - A CSV file (`bns.csv`) containing legal documents with the necessary columns.
 
 
